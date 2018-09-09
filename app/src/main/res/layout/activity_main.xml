@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#58FA58"
+    >
 
     <Button
         android:id="@+id/entrarlog"
@@ -17,7 +19,9 @@
         app:layout_constraintBottom_toTopOf="@+id/registroLog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rounded_button"
+        />
 
     <EditText
         android:id="@+id/passwordLog"
@@ -61,6 +65,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rounded_button"
+        />
 
 </android.support.constraint.ConstraintLayout>
