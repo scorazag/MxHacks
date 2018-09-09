@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tomafotos">
+    tools:context=".Tomafotos"
+    android:background=" #ffffb3">
 
     <ImageView
         android:id="@+id/fotoExp"

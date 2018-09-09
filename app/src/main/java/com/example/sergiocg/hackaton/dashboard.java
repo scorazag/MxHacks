@@ -17,6 +17,7 @@ public class dashboard extends AppCompatActivity {
 
         vender = findViewById(R.id.vender);
 
+
         vender.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,4 +27,5 @@ public class dashboard extends AppCompatActivity {
             }
         });
     }
+
 }

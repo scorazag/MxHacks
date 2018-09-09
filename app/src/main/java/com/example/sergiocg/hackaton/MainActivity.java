@@ -3,6 +3,7 @@ package com.example.sergiocg.hackaton;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,36 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void onCreate(Bundle savedInstanceState)
 
-        registro = findViewById(R.id.registroLog);
-        loginB = findViewById(R.id.entrarlog);
-
-        editTextUsername = (EditText) findViewById(R.id.correoLog);
-        editTextPassword = (EditText) findViewById(R.id.passwordLog);
-
-
-        registro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,registro.class);
-
-                startActivity(intent);
-            }
-        });
-
-        loginB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //login();
-                Intent intent = new Intent(MainActivity.this,dashboard.class);
-                startActivity(intent);
-            }
-        });
-
-    }
 
     public void login(){
         RequestQueue requestQueue = Volley.newRequestQueue(this);
